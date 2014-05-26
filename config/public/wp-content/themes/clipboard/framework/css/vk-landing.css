@@ -1,0 +1,90 @@
+/*----------------------------------------------------------------------
+ 
+	Framework CSS for theme landing messages
+	
+/*--------------------------------------------------------------------*/
+
+	/* This typography supercedes the themes settings as it is loaded below theme styles */
+	#vk_landing {
+		font-family: 'Helvetica Neue', sans-serif !important;
+		font-weight: normal;
+		color: #333;
+		font-size: 14px;
+		line-height: 24px;
+		font-size: 100%;
+		font-weight: normal;
+		margin-bottom: 24px;
+		font-size: 100%;
+		-webkit-font-smoothing: antialiased !important;
+		-webkit-text-size-adjust: 100%;
+		-moz-font-smoothing: antialiased;
+		font-smoothing: antialiased;
+	}
+	#vk_landing * {
+		font-family: 'Helvetica Neue', sans-serif !important;
+		text-decoration: none !important;
+		border: none !important;
+	}
+	#vk_landing h1 { font-size: 32px !important; line-height: 34px !important; }
+	#vk_landing h2 { font-size: 26px !important; line-height: 28px !important; }
+	#vk_landing h3 { font-size: 24px !important; line-height: 26px !important; }
+	#vk_landing h4 { font-size: 20px !important; line-height: 24px !important; }
+	#vk_landing h5 { font-size: 18px !important; line-height: 24px !important; }
+	#vk_landing h6 { font-size: 16px !important; line-height: 24px !important; }
+	#vk_landing p { font-size: 14px; line-height: 24px; }
+	#vk_landing p:last-child { margin-bottom: 0px; }
+	#vk_landing a { text-decoration: none; }
+	#vk_landing strong { font-weight: bold; }
+	#vk_landing a {
+	  color: #3495c6;
+	  -webkit-transition-duration: 0s;
+	     -moz-transition-duration: 0s;
+	      -ms-transition-duration: 0s;
+	       -o-transition-duration: 0s;
+	          transition-duration: 0s;
+	}
+	#vk_landing a:hover { opacity: 0.7; }
+
+
+	/* Start the actual landing style */
+	#vk_landing {
+		padding: 80px 0;
+		margin: 0;
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		z-index: 999999999999;
+		background: #ffffff;
+		position: fixed;
+		top: 0; 
+		left: 0;
+	}
+	/* The admin verison of landing pages */
+	#vk_landing.adminside {
+		position: relative;
+		top: auto; 
+		left: auto;
+		background: none;
+		z-index: 0;
+	}
+	#vk_landing_inner {
+		max-width: 500px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+	#vk_landing_inner h3 {
+		margin-bottom: 40px;
+	}
+	#vk_landing_inner p.vk_landing_note {
+		font-style: italic;
+		color: #999;
+		margin-top: 0px;
+	}
+	#vk_landing_inner img {
+		display: inline-block;
+		margin: 0 auto;
+		text-align: center;
+		max-width: 100%;
+		height: auto;
+	}
+

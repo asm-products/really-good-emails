@@ -1,0 +1,142 @@
+/*----------------------------------------------------------------------
+ 	
+ 	VISUALKICKS - SOCIAL ICONS WIDGET
+
+/*----------------------------------------------------------------------*/
+
+body .social-widget {
+	margin-bottom: -5px;
+}
+body .social-widget .button,
+body .social-widget .button:visited {
+	font-family: 'FontAwesome' !important;
+	display: inline-block;
+	color: #fff;
+	background: #333;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	margin: 0;
+			
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	    -ms-appearance: none;
+	     -o-appearance: none;
+	   		appearance: none;
+
+	-webkit-transition-duration: 0.1s;
+	   -moz-transition-duration: 0.1s;
+	    -ms-transition-duration: 0.1s;
+	     -o-transition-duration: 0.1s;
+	        transition-duration: 0.1s;
+
+	/* taken from framework.css that comes with visualkick themes */
+	height: 40px;
+	width: 40px;
+	line-height: 42px;
+	padding: 0px;
+	font-size: 13px;
+	margin-bottom: 5px;
+
+}
+body .social-widget .button:hover { opacity: .85; }
+
+/* Social Buttons */
+body .social-widget .button.android {
+	background-color: #a4c639;
+	border-color: #a4c639;
+}
+body .social-widget .button.apple {
+	background-color: #f1f1f1;
+	border-color: #f1f1f1;
+	color: #333;
+}
+body .social-widget .button.dribbble {
+	background-color: #ea4c89;
+	border-color: #ea4c89;
+}
+body .social-widget .button.dropbox {
+	background-color: #3d9ae8;
+	border-color: #3d9ae8;
+}
+body .social-widget .button.facebook {
+	background-color: #3b5998;
+	border-color: #3b5998;
+}
+body .social-widget .button.flickr {
+	background-color: #0063dc;
+	border-color: #0063dc;
+}
+body .social-widget .button.foursquare {
+	background-color: #25a0ca;
+	border-color: #25a0ca;
+}
+body .social-widget .button.github {
+	background-color: #171515;
+	border-color: #171515;
+}
+body .social-widget .button.google {
+	background-color: #db4a39;
+	border-color: #db4a39;
+}
+body .social-widget .button.instagram {
+	background-color: #3f729b;
+	border-color: #3f729b;
+}
+body .social-widget .button.linkedin {
+	background-color: #0e76a8;
+	border-color: #0e76a8;
+}
+body .social-widget .button.pinterest {
+	background-color: #c8232c;
+	border-color: #c8232c;
+}
+body .social-widget .button.renren {
+	background-color: #357ab4;
+	border-color: #357ab4;
+}
+body .social-widget .button.skype {
+	background-color: #00aff0;
+	border-color: #00aff0;
+}
+body .social-widget .button.trello {
+	background-color: #164b69;
+	border-color: #164b69;
+}
+body .social-widget .button.tumblr {
+	background-color: #34526f;
+	border-color: #34526f;
+}
+body .social-widget .button.twitter {
+	background-color: #00acee;
+	border-color: #00acee;
+}
+body .social-widget .button.vimeo {
+	background-color: #86c9ef;
+	border-color: #86c9ef;
+}
+body .social-widget .button.vk {
+	background-color: #2B587A;
+	border-color: #2B587A;
+}
+body .social-widget .button.weibo {
+	background-color: #eb182c;
+	border-color: #eb182c;
+}
+body .social-widget .button.windows {
+	background-color: #1a1a1a;
+	border-color: #1a1a1a;
+}
+body .social-widget .button.xing {
+	background-color: #126567;
+	border-color: #126567;
+}
+body .social-widget .button.youtube {
+	background-color: #c4302b;
+	border-color: #c4302b;
+}
+body .social-widget .button.rss {
+	background-color: #ee802f;
+	border-color: #ee802f;
+}

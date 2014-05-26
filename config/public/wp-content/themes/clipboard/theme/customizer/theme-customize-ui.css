@@ -1,0 +1,540 @@
+/*-----------------------------------------------------------------------------------*/
+/*
+/*	Groups
+/*
+/*-----------------------------------------------------------------------------------*/
+
+.customizer-group {
+	position: relative;
+	display: inline-block;
+	background: #f9f9f9;
+	border: none;
+	padding: 1px 7px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	 -khtml-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+			box-sizing: border-box;
+
+}
+.customizer-group:last-child { margin-bottom: 2px; }
+.customizer-group li.customize-control-checkbox:last-child { margin-bottom: 2px; }
+
+
+/*-----------------------------------------------------------------------------------*/
+/*
+/*	Nested Groups
+/*
+/*-----------------------------------------------------------------------------------*/
+
+/* 2nd level */
+.customizer-group .customizer-group {
+	background: #f9f9f9;
+	border: none;
+	margin-bottom: 2px;
+}
+/* .accordion-section-content { overflow: visible; }
+
+
+/*-----------------------------------------------------------------------------------*/
+/*
+/*	Select Switches
+/*
+/*-----------------------------------------------------------------------------------*/
+
+.customizer-group.select {
+	padding: 0px;
+	background: #f1f1f1;
+}
+.customizer-group li.selectSwitch {
+	padding-bottom: 7px;
+	margin-bottom: 0px;
+	background: #f9f9f9;
+
+	-webkit-box-sizing: border-box;
+	 -khtml-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+			box-sizing: border-box;
+
+}
+.customizer-group li.selectSwitch span,
+.customizer-group li.selectSwitch select {
+	margin-left: 8px;
+}
+.customizer-group.select > .customizer-group {
+	background-color: transparent;
+	border: none;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 8px;
+	margin-top: 0px;
+	margin-bottom: -4px;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*
+/*	Slide Switches
+/*
+/*-----------------------------------------------------------------------------------*/
+
+.customizer-group.slide {
+	background: #f1f1f1;
+}
+.customizer-group li.slideSwitch {
+	background: #f9f9f9;
+	padding: 0 7px;
+	padding-top: 2px;
+	margin-bottom: -1px;
+	margin-left: -7px;
+	margin-top: -2px;
+
+	-webkit-transition: all 0.1s ease-in-out;
+	   -moz-transition: all 0.1s ease-in-out;
+	    -ms-transition: all 0.1s ease-in-out;
+	     -o-transition: all 0.1s ease-in-out;
+	        transition: all 0.1s ease-in-out;
+}
+.customizer-group li.slideSwitch.slideUp {
+
+}
+.customizer-group li.slideSwitch.slideDown {
+	margin-bottom: 8px;
+
+}
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*
+/*	Padding Switches
+/*
+/*-----------------------------------------------------------------------------------*/
+
+.customizer-group li.padding {
+	margin-bottom: 0px !important;
+	padding: 0 7px;
+	margin-left: -7px;
+
+
+	-webkit-transition: all 0.1s ease-in-out;
+	   -moz-transition: all 0.1s ease-in-out;
+	    -ms-transition: all 0.1s ease-in-out;
+	     -o-transition: all 0.1s ease-in-out;
+	        transition: all 0.1s ease-in-out;
+}
+.customizer-group li.padding.slideUp {}
+.customizer-group li.padding.slideDown {
+	color: #fff;
+	background: #333;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*
+/*	Group Description
+/*
+/*-----------------------------------------------------------------------------------*/
+
+.group-description {
+	position: absolute;
+	top: 3px;
+	right: 2px;
+	height: 13px;
+	width: 13px;
+	cursor: pointer;
+
+	background: #298cba!important;
+
+	color: #fff;
+	font-family: Times;
+	font-style: italic;
+	text-align: center;
+	font-size: 11px;
+	line-height: 14px;
+}
+.group-description:hover span { display: block; }
+.group-description span {
+	opacity: 0;
+	display: none;
+	z-index: 999999999999;
+
+	position: absolute;
+	left: -225px;
+	top: 14px;	
+	width: 200px;
+	padding: 10px;
+
+	background: #333;
+
+	font-family: helvetica;
+	font-style: normal;
+	font-weight: lighter;
+	text-align: left;
+	font-size: 12px;
+	line-height: 1.8;
+	text-shadow: none;
+
+
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*
+/*	Tools & Buttons
+/*
+/*-----------------------------------------------------------------------------------*/
+
+/* increase tools height */
+.wp-full-overlay-sidebar .wp-full-overlay-sidebar-content {
+	top: 90px;
+}
+
+/* hide hidden section */
+#accordion-section-tools {
+	display: none;
+}
+
+/* tools */
+#vk-tools {
+	border-top: solid 1px #e2e2e2;
+	display: block;
+	width: 100%;
+	float: left;
+	clear: both;
+	height: 38px;
+	padding-top: 7px;
+}
+
+#vk-tools * {
+	margin-bottom: 0px;
+}
+
+
+/* buttons */
+a.vk-ui-button {
+	font-family: helvetica !important;
+	font-weight: bold;
+	font-size: 12px;
+	text-transform: uppercase;
+	outline: none !important; 
+	position: relative;
+	color: transparent;
+	margin-bottom: 0px !important;
+	margin-right: 3px !important;
+}
+
+/* button icons */
+a.vk-ui-button span {
+	position: absolute;
+	display: block;
+	top: 2px;
+	left: 2px;
+	width: 23px !important;
+	height: 23px !important;
+	background-position: center center;
+}
+
+/* icons */
+a#tools_refresh {
+	width: 30px;
+}
+a#tools_refresh span {
+	background-image: url(../customizer/images/icon-refresh.png);
+}
+
+
+/* active button */
+a.vk-ui-button.vk-active {
+	background: #eee !important;
+	border-color: #999 !important;
+	color: #333 !important;
+	-webkit-box-shadow: inset 0 2px 5px -3px rgba(0,0,0,.5) !important;
+	box-shadow: inset 0 2px 5px -3px rgba(0,0,0,.5) !important;
+	outline: none !important; 
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*
+/*	Loading Message
+/*
+/*-----------------------------------------------------------------------------------*/
+
+#vk-loading {
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	padding: 12px;
+	background: #333;
+	color: #fff;
+	text-align: center;
+
+	z-index: 99;
+
+	-webkit-border-radius: 3px;
+	 -khtml-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	    -ms-border-radius: 3px;
+	     -o-border-radius: 3px;
+	        border-radius: 3px;
+
+}
+#vk-loading p {
+	font-size: 14px !important;
+	font-weight: normal;
+	line-height: 1;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*
+/*	Custom CSS
+/*
+/*-----------------------------------------------------------------------------------*/
+
+#vk-customcss {
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: rgba(255,255,255,.95);
+	z-index: 90;
+}
+#vk-customcss form {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	right: 100px;
+	bottom: 100px;
+	padding: 0;
+	margin: 0 !important;
+	outline: none !important;
+	background: none;
+}
+
+#vk-customcss form textarea {
+
+	/* becuase firefox said so */
+	width: 100%;
+	height: 100%;
+
+	font-family: helvetica !important;
+	font-size: 14px;
+	color: #333;
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	border: none;
+	outline: none;
+	background: none;
+	overflow: scroll;
+
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	     -o-box-shadow: none;
+			box-shadow: none;
+
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	    -ms-appearance: none;
+	     -o-appearance: none;
+	   		appearance: none;
+
+	-webkit-border-radius: 0px;
+	   -moz-border-radius: 0px;
+	    -ms-border-radius: 0px;
+	     -o-border-radius: 0px;
+	        border-radius: 0px;
+
+
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*
+/*	jQuery UI Slider Styling
+/*
+/*-----------------------------------------------------------------------------------*/
+
+.vk_slider.ui-widget-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.vk_slider.ui-slider {
+	position: relative;
+	text-align: left;
+	margin-top: 11px !important;
+	height: 2px !important;
+	background: #777 !important;
+	border: none !important;
+}
+.vk_slider.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 1.2em;
+	height: 1.2em;
+	cursor: default;
+	border: solid 1px #CFCFCF;
+
+	background: #e9e9e9;
+	background: #e9e9e9 -webkit-gradient( linear, left top, left bottom, from(rgba(255,255,255,.1)), to(rgba(0,0,0,.1)));
+	background: #e9e9e9 -moz-linear-gradient(top,  rgba(255,255,255,.1),  rgba(0,0,0,.1));
+	background: #e9e9e9 -ms-linear-gradient(top,  rgba(255,255,255,.1),  rgba(0,0,0,.1));
+
+	-webkit-border-radius: 100px !important;
+	 -khtml-border-radius: 100px !important;
+	   -moz-border-radius: 100px !important;
+	    -ms-border-radius: 100px !important;
+	     -o-border-radius: 100px !important;
+	        border-radius: 100px !important;
+}
+.vk_slider.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+}
+.vk_slider.ui-slider-horizontal {
+	height: .8em;
+
+	border: solid 1px #dfdfdf;
+	background: #f5f5f5;
+	background: #f5f5f5 -webkit-gradient( linear, left bottom, left top, from(rgba(255,255,255,.1)), to(rgba(0,0,0,.05)));
+	background: #f5f5f5 -moz-linear-gradient(bottom,  rgba(255,255,255,.1),  rgba(0,0,0,.05));
+	background: #f5f5f5 -ms-linear-gradient(bottom,  rgba(255,255,255,.1),  rgba(0,0,0,.05));
+
+	box-shadow: inset 0 0 4px rgba(0,0,0,.05);
+}
+.vk_slider.ui-slider-horizontal .ui-slider-handle {
+	top: -8px;
+	margin-left: -.6em;
+}
+.vk_slider.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+.vk_slider.ui-slider-horizontal .ui-slider-range-min {
+	left: 0;
+}
+.vk_slider.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+.vk_slider.ui-widget {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1.1em;
+}
+.vk_slider.ui-widget .ui-widget {
+	font-size: 1em;
+}
+.vk_slider.ui-widget input,
+.vk_slider.ui-widget select,
+.vk_slider.ui-widget textarea,
+.vk_slider.ui-widget button {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1em;
+}
+.vk_slider.ui-widget-content {}
+.vk_slider.ui-corner-all, .vk_slider .ui-corner-all {
+
+}
+
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*
+/*	Divider
+/*
+/*-----------------------------------------------------------------------------------*/
+
+
+li[id*='accordion-section-divider'] {
+	background: #f1f1f1;
+	height: 4px !important;
+	cursor: default;
+} 
+li[id*='accordion-section-divider'] * {
+	display: none;
+} 
+
+
+/*-----------------------------------------------------------------------------------*/
+/*
+/*	Animations
+/*
+/*-----------------------------------------------------------------------------------*/
+
+.fadeUp {
+	-webkit-animation-delay: 0s;
+	 -khtml-animation-delay: 0s;
+	   -moz-animation-delay: 0s;
+	    -ms-animation-delay: 0s;
+	     -o-animation-delay: 0s;
+	        animation-delay: 0s;
+
+	-webkit-animation-name: fadeUp;
+	 -khtml-animation-name: fadeUp;
+	   -moz-animation-name: fadeUp;
+	    -ms-animation-name: fadeUp;
+	     -o-animation-name: fadeUp;
+	        animation-name: fadeUp;
+
+	-webkit-animation-iteration-count: 1;
+	 -khtml-animation-iteration-count: 1;
+	   -moz-animation-iteration-count: 1;
+	    -ms-animation-iteration-count: 1;
+	     -o-animation-iteration-count: 1;
+			animation-iteration-count: 1;
+
+	-webkit-animation-duration: .2s;
+	 -khtml-animation-duration: .2s;
+	   -moz-animation-duration: .2s;
+	    -ms-animation-duration: .2s;
+	     -o-animation-duration: .2s;
+	        animation-duration: .2s;
+
+}
+@-webkit-keyframes fadeUp {
+	0%		{ -webkit-transform: translateY(10px); }
+	100%	{ -webkit-transform: translateY(0px); }
+}
+@-khtml-keyframes fadeUp {
+	0%		{ -khtml-transform: translateY(10px); }
+	100%	{ -khtml-transform: translateY(0px); }
+}
+@-moz-keyframes fadeUp {
+	0%		{ -moz-transform: translateY(10px); }
+	100%	{ -moz-transform: translateY(0px); }
+}
+@-ms-keyframes fadeUp {
+	0%		{ -ms-transform: translateY(10px); }
+	100%	{ -ms-transform: translateY(0px); }
+}
+@-o-keyframes fadeUp {
+	0%		{ -o-transform: translateY(10px); }
+	100%	{ -o-transform: translateY(0px); }
+}
+@keyframes fadeUp {
+	0%		{ transform: translateY(10px); }
+	100%	{ transform: translateY(0px); }
+}
+
+
+

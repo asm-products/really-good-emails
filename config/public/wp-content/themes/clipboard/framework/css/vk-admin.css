@@ -1,0 +1,23 @@
+/*----------------------------------------------------------------------
+ 
+	Framework CSS for any and all admin pages
+	
+/*--------------------------------------------------------------------*/
+
+/* postmeta dividers */
+tr.vk-divider {
+	background: #e2e2e2;
+	border-bottom: solid 1px #fff;
+	height: 1px;
+}
+
+/* postmeta groups */
+tbody.vk-group {
+	border-bottom: 1px solid #e2e2e2;
+	background: #FCFCFC !important;
+}
+
+/* thumbnail column width */
+th#vk_post_thumbs {
+	width: 50px !important;
+}

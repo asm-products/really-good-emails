@@ -1,0 +1,324 @@
+/*-----------------------------------------------------------------------------------*/
+/*
+/*	Column Styles
+/*
+/*-----------------------------------------------------------------------------------*/
+
+.visual-one-half,
+.visual-one-third,
+.visual-two-third,
+.visual-three-fourth,
+.visual-one-fourth {
+	margin-bottom: 2em;
+}
+
+@media screen and (min-width: 700px) {
+
+	/* 1/2 */
+	.visual-one-half { width: 48%; }
+
+	/* 1/3 */
+	.visual-one-third { width: 30.66%; }
+	.visual-two-third { width: 65.33%; }
+
+	/* 1/4 */
+	.visual-one-fourth { width: 22%; }
+	.visual-three-fourth { width: 74%; }
+
+	/* Last Cols */
+	.visual-one-half,
+	.visual-one-third,
+	.visual-two-third,
+	.visual-three-fourth,
+	.visual-one-fourth {
+		position: relative;
+		margin-right: 4%;
+		float: left;
+	}
+	.visual-column-last {
+		margin-right: 0!important;
+		clear: right;
+	}
+
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*
+/*	Button Styles
+/*
+/*-----------------------------------------------------------------------------------*/
+
+/* Button Colors */
+a.visual-button { /* default will be overidden in visualkick themes */
+	border-color: #333;
+	background: #333;
+	color: #fff;
+	margin-right: 3px;
+	-webkit-box-sizing: border-box;
+	 -khtml-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+			box-sizing: border-box;
+
+}
+a.visual-button:hover { /* default will be overidden in visualkick themes */
+	border-color: #f1f1f1;
+	background: #f1f1f1;
+	color: #333;
+}
+a.visual-button.green {
+	border-color: #A3D651 !important;
+	background: #A3D651 !important;
+	color: #fff !important;
+}
+a.visual-button.green:hover {
+	border-color: #ABE352 !important;
+	background: #ABE352 !important;
+	color: #fff !important;
+}
+a.visual-button.light-blue {
+	border-color: #2caada !important;
+	background: #2caada !important;
+	color: #fff !important;
+}
+a.visual-button.light-blue:hover {
+	border-color: #32bcef !important;
+	background: #32bcef !important;
+	color: #fff !important;
+}
+a.visual-button.blue {
+	border-color: #0c6fb1 !important;
+	background: #0c6fb1 !important;
+	color: #fff !important;
+}
+a.visual-button.blue:hover {
+	border-color: #1188d6 !important;
+	background: #1188d6 !important;
+	color: #fff !important;
+}
+a.visual-button.red {
+	border-color: #e3514a !important;
+	background: #e3514a !important;
+	color: #fff !important;
+}
+a.visual-button.red:hover {
+	border-color: #ff5e56 !important;
+	background: #ff5e56 !important;
+	color: #fff !important;
+}
+a.visual-button.orange {
+	border-color: #ffb031 !important;
+	background: #ffb031 !important;
+	color: #fff !important;
+}
+a.visual-button.orange:hover {
+	border-color: #ffc531 !important;
+	background: #ffc531 !important;
+	color: #fff !important;
+}
+a.visual-button.purple {
+	border-color: #E37BD6 !important;
+	background: #E37BD6 !important;
+	color: #fff !important;
+}
+a.visual-button.purple:hover {
+	border-color: #E887DC !important;
+	background: #E887DC !important;
+	color: #fff !important;
+}
+a.visual-button.grey {
+	border-color: #e8e8e8 !important;
+	background: #e8e8e8 !important;
+	color: #444 !important;
+}
+a.visual-button.grey:hover {
+	border-color: #f6f6f6 !important;
+	background: #f6f6f6 !important;
+	color: #444 !important;
+}
+a.visual-button.black {
+	border-color: #111111 !important;
+	background: #111111 !important;
+	color: #fff !important;
+}
+a.visual-button.black:hover {
+	border-color: #ffffff !important;
+	background: #ffffff !important;
+	color: #222222 !important;
+}
+a.visual-button.white {
+	border-color: #ffffff !important;
+	background: #ffffff !important;
+	color: #222222 !important;
+}
+a.visual-button.white:hover {
+	border-color: #111111 !important;
+	background: #111111 !important;
+	color: #fff !important;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*
+/*	Alert Styles
+/*
+/*-----------------------------------------------------------------------------------*/
+
+.visual-alert {
+    padding: 15px;
+    margin: 0 0 1.5em 0;
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.04);
+	 -khtml-box-shadow: 0 1px 3px rgba(0,0,0,.04);
+	   -moz-box-shadow: 0 1px 3px rgba(0,0,0,.04);
+	    -ms-box-shadow: 0 1px 3px rgba(0,0,0,.04);
+	     -o-box-shadow: 0 1px 3px rgba(0,0,0,.04);
+	        box-shadow: 0 1px 3px rgba(0,0,0,.04);
+}
+
+.visual-alert.white {
+    background: #fff;
+    border: 1px solid #dfdfdf;
+    color: #373737;
+}
+.visual-alert.red {
+    background: #ffe6e3;
+    border: 1px solid #f2c3bf;
+    color: #bf210e;
+}
+.visual-alert.yellow {
+    background: #fff7d6;
+    border: 1px solid #e9d477;
+    color: #956433;
+}
+.visual-alert.green {
+    background: #edfdd3;
+    border: 1px solid #c4dba0;
+    color: #657e3c;
+}
+.visual-alert.grey {
+    background: #fbfbfb;
+    border: 1px solid #dfdfdf;
+    color: #373737;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*
+/*	Tab Styles
+/*
+/*-----------------------------------------------------------------------------------*/
+
+.visual-tabs.ui-tabs .ui-tabs-hide {
+    position: absolute;
+    left: -10000px;
+}
+.visual-tabs {
+	margin-bottom: 2em;
+}
+.visual-tabs .visual-nav {
+	float: none;
+	list-style: none;
+}
+.visual-tabs .visual-nav li {
+	display: block;
+	float: left;
+	clear: none;
+	list-style: none;
+	margin-right: 1px;
+	margin-bottom: -1px;
+}
+.visual-tabs .visual-nav li a {
+	display: block;
+	overflow: hidden;
+	padding: 10px 15px;
+	margin: 0;
+	font-size: 14px;
+	text-decoration: none;
+
+	border: 1px solid #e2e2e2 !important;
+	border-bottom: none !important;
+	background: #f7f7f7;
+	color: #333 !important;
+
+	-webkit-box-shadow: inset 0px -1px #e2e2e2;
+	 -khtml-box-shadow: inset 0px -1px #e2e2e2;
+	   -moz-box-shadow: inset 0px -1px #e2e2e2;
+	    -ms-box-shadow: inset 0px -1px #e2e2e2;
+	     -o-box-shadow: inset 0px -1px #e2e2e2;
+	        box-shadow: inset 0px -1px #e2e2e2;
+
+}
+
+.visual-tabs .visual-nav .ui-tabs-selected a,
+.visual-tabs .visual-nav .ui-tabs-active a {
+	background: #ffffff;
+	box-shadow: none;
+}
+.visual-tabs .visual-tab {
+	display: none; /* set the default */
+	padding: 20px;
+	border: 1px solid #e2e2e2;
+	background: #ffffff;
+	color: #333;
+
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.04);
+	 -khtml-box-shadow: 0 1px 3px rgba(0,0,0,.04);
+	   -moz-box-shadow: 0 1px 3px rgba(0,0,0,.04);
+	    -ms-box-shadow: 0 1px 3px rgba(0,0,0,.04);
+	     -o-box-shadow: 0 1px 3px rgba(0,0,0,.04);
+	        box-shadow: 0 1px 3px rgba(0,0,0,.04);
+}
+.visual-tabs .visual-tab:nth-child(2) { /* the nav is the first child */
+	display: block;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*
+/*	Toggle Styles
+/*
+/*-----------------------------------------------------------------------------------*/
+
+.visual-toggle {
+	margin-bottom: 5px;
+
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.04);
+	 -khtml-box-shadow: 0 1px 3px rgba(0,0,0,.04);
+	   -moz-box-shadow: 0 1px 3px rgba(0,0,0,.04);
+	    -ms-box-shadow: 0 1px 3px rgba(0,0,0,.04);
+	     -o-box-shadow: 0 1px 3px rgba(0,0,0,.04);
+	        box-shadow: 0 1px 3px rgba(0,0,0,.04);
+}
+
+.visual-toggle .visual-toggle-title {
+	display: block;
+	padding: 15px;
+	cursor: pointer;
+	position: relative;
+	font-size: 14px;
+
+	border: 1px solid #e2e2e2;
+	background: #ffffff;
+	color: #333;
+}
+.visual-toggle .visual-toggle-title .title-icon {
+	width: 20px;
+	display: inline-block;
+	text-align: center;
+}
+
+.visual-toggle-inner {
+	padding: 20px;
+	border: 1px solid #e2e2e2;
+	border-top: none;
+	background: #ffffff;
+	color: #333;
+}
+
+
+
+/* Clearfix */
+.visual-clearfix:before,
+.visual-clearfix:after { content:""; display:table; }
+.visual-clearfix:after { clear: both; }
+.visual-clearfix { zoom:1; /* For IE 6/7 (trigger hasLayout) */ }
