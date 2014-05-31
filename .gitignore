@@ -1,7 +1,6 @@
-!config/
+*
+.DS_Store
 
-config/*
-!config/public/
-
-#config/language/*
-#!config/language/gr/
+!*/
+!.gitignore
+!config/public/*
