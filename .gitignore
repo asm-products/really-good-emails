@@ -1,0 +1,7 @@
+!config/
+
+config/*
+!config/public/
+
+#config/language/*
+#!config/language/gr/
