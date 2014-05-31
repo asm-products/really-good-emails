@@ -5,3 +5,5 @@
 
 config/*
 !config/public/
+
+config/vendor
