@@ -1,9 +1,0 @@
-*
-.DS_Store
-
-!config/
-
-config/*
-!config/public/
-
-config/vendor
