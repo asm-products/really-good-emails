@@ -1,7 +1,17 @@
 						<div class="clear"></div>
 					
 					</div><!-- end .rightContent -->
-
+				<script type="text/javascript">
+				  (function() {
+				    window._pa = window._pa || {};
+				    // _pa.orderId = "myOrderId"; // OPTIONAL: attach unique conversion identifier to conversions
+				    // _pa.revenue = "19.99"; // OPTIONAL: attach dynamic purchase values to conversions
+				    // _pa.productId = "myProductId"; // OPTIONAL: Include product ID for use with dynamic ads
+				    var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+				    pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.perfectaudience.com/serve/53ab5d8e36531ac20e00006f.js";
+				    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+				  })();
+				</script>
 				<?php // copyright
 
 				$copy_text=get_option('vk_copy_text');
