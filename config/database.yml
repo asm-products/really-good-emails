@@ -1,4 +1,6 @@
 development:
   adapter: postgresql
   database: railsapp_development
+  user: postgres
+  password: password
   host: 127.0.0.1
