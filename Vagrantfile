@@ -28,7 +28,12 @@ Vagrant.configure("2") do |config|
             :rubies => [
               "2.1.3"
             ],
-            :global => "2.1.3"
+            :global => "2.1.3",
+            :gems => {
+              "2.1.3" => [
+                {:name => "bundler"}
+              ]
+            }
           }
         ]
       },
