@@ -1,12 +1,12 @@
 development: &default
   adapter: postgresql
   encoding: unicode
-  database: really_good_dev
+  database: postgres
   pool: 5
   username: postgres
   password:
-  host: 127.0.0.1 
+  host: db
 
 test:
   <<: *default
-  database: really_good_test
+  database: myapp_test

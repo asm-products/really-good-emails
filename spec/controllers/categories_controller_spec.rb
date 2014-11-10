@@ -24,22 +24,22 @@ RSpec.describe CategoriesController, :type => :controller do
   # Category. As you add validations to Category, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    { :name => "test" }
   }
 
   let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
+    { :nee => "tete"}
   }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
   # CategoriesController. Be sure to keep this updated too.
-  let(:valid_session) { {} }
+  let(:valid_session) { { } }
 
   describe "GET index" do
     it "assigns all categories as @categories" do
       category = Category.create! valid_attributes
-      get :index, {}, valid_session
+      get :index, format: :json
       expect(assigns(:categories)).to eq([category])
     end
   end
@@ -47,50 +47,26 @@ RSpec.describe CategoriesController, :type => :controller do
   describe "GET show" do
     it "assigns the requested category as @category" do
       category = Category.create! valid_attributes
-      get :show, {:id => category.to_param}, valid_session
+      get :show, {:id => category.to_param, format: :json}
       expect(assigns(:category)).to eq(category)
     end
   end
 
- 
-
-  describe "GET edit" do
-    it "assigns the requested category as @category" do
-      category = Category.create! valid_attributes
-      get :edit, {:id => category.to_param}, valid_session
-      expect(assigns(:category)).to eq(category)
-    end
-  end
 
   describe "POST create" do
     describe "with valid params" do
       it "creates a new Category" do
+        valid_attributes.merge!({format: :json})
         expect {
-          post :create, {:category => valid_attributes}, valid_session
+          post :create,  valid_attributes
         }.to change(Category, :count).by(1)
       end
 
       it "assigns a newly created category as @category" do
-        post :create, {:category => valid_attributes}, valid_session
+        valid_attributes.merge!({format: :json})
+        post :create, valid_attributes
         expect(assigns(:category)).to be_a(Category)
         expect(assigns(:category)).to be_persisted
-      end
-
-      it "redirects to the created category" do
-        post :create, {:category => valid_attributes}, valid_session
-        expect(response).to redirect_to(Category.last)
-      end
-    end
-
-    describe "with invalid params" do
-      it "assigns a newly created but unsaved category as @category" do
-        post :create, {:category => invalid_attributes}, valid_session
-        expect(assigns(:category)).to be_a_new(Category)
-      end
-
-      it "re-renders the 'new' template" do
-        post :create, {:category => invalid_attributes}, valid_session
-        expect(response).to render_template("new")
       end
     end
   end
@@ -101,37 +77,20 @@ RSpec.describe CategoriesController, :type => :controller do
         skip("Add a hash of attributes valid for your model")
       }
 
-      it "updates the requested category" do
-        category = Category.create! valid_attributes
-        put :update, {:id => category.to_param, :category => new_attributes}, valid_session
-        category.reload
-        skip("Add assertions for updated state")
-      end
-
       it "assigns the requested category as @category" do
         category = Category.create! valid_attributes
-        put :update, {:id => category.to_param, :category => valid_attributes}, valid_session
+        valid_attributes.merge!({:id => category.to_param,format: :json})
+        put :update, valid_attributes
         expect(assigns(:category)).to eq(category)
-      end
-
-      it "redirects to the category" do
-        category = Category.create! valid_attributes
-        put :update, {:id => category.to_param, :category => valid_attributes}, valid_session
-        expect(response).to redirect_to(category)
       end
     end
 
     describe "with invalid params" do
       it "assigns the category as @category" do
         category = Category.create! valid_attributes
-        put :update, {:id => category.to_param, :category => invalid_attributes}, valid_session
+        invalid_attributes.merge!({format: :json,id: category.to_param,})
+        put :update, invalid_attributes, valid_session
         expect(assigns(:category)).to eq(category)
-      end
-
-      it "re-renders the 'edit' template" do
-        category = Category.create! valid_attributes
-        put :update, {:id => category.to_param, :category => invalid_attributes}, valid_session
-        expect(response).to render_template("edit")
       end
     end
   end
@@ -140,14 +99,8 @@ RSpec.describe CategoriesController, :type => :controller do
     it "destroys the requested category" do
       category = Category.create! valid_attributes
       expect {
-        delete :destroy, {:id => category.to_param}, valid_session
+        delete :destroy, {:id => category.to_param, :format => :json}
       }.to change(Category, :count).by(-1)
-    end
-
-    it "redirects to the categories list" do
-      category = Category.create! valid_attributes
-      delete :destroy, {:id => category.to_param}, valid_session
-      expect(response).to redirect_to(categories_url)
     end
   end
 
