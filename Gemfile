@@ -39,7 +39,9 @@ gem 'unicorn'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-
+group "development" do
+  gem "rspec-rails"
+end
 gem "rack-timeout"
 group :production do
   gem "rails_12factor"
