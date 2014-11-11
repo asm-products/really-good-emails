@@ -5,19 +5,18 @@ class CategoriesController < ApplicationController
   # GET /categories.json
   def index
     @categories = Category.all
-    respond_to :json
+    render json: @categories
   end
 
   # GET /categories/1
   # GET /categories/1.json
   def show
-    @categories = Category.find(params[:id])
-    respond_to :json
+    @category = Category.find(params[:id])
+    render json: @category 
   end
 
   # GET /categories/new
   def new
-    @category = Category.new
   end
 
   # GET /categories/1/edit
@@ -27,26 +26,18 @@ class CategoriesController < ApplicationController
   # POST /categories
   # POST /categories.json
   def create
-    @category = Category.new(category_params)
+    @category = Category.create(category_params)
 
-    respond_to do |format|
-      if @category.save
-        format.json { render :show, status: :created, location: @category }
-      else
-        format.json { render json: @category.errors, status: :unprocessable_entity }
-      end
-    end
+    render json: @category
   end
 
   # PATCH/PUT /categories/1
   # PATCH/PUT /categories/1.json
   def update
-    respond_to do |format|
-      if @category.update(category_params)
-        format.json { render :show, status: :ok, location: @category }
-      else
-        format.json { render json: @category.errors, status: :unprocessable_entity }
-      end
+    if @category.update(category_params)
+      render json: @category
+    else
+      render json: @category.errors, status: :unprocessable_entity 
     end
   end
 
@@ -54,9 +45,7 @@ class CategoriesController < ApplicationController
   # DELETE /categories/1.json
   def destroy
     @category.destroy
-    respond_to do |format|
-      format.json { head :no_content }
-    end
+    render json: @category
   end
 
   private
