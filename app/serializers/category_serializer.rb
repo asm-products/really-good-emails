@@ -1,3 +1,3 @@
-class PostSerializer < ActiveModel::Serializer
+class CategorySerializer < ActiveModel::Serializer
   attributes :name, :slug
 end
