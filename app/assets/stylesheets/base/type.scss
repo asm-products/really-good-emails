@@ -1,0 +1,41 @@
+body {
+  font-family: $font-base;
+  font-weight: 400;
+  font-size: $type-body;
+  line-height: 1.8;
+  color: $black;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: $red;
+
+  &:hover {
+    color: lighten($red, 8%);
+  }
+}
+
+h1 {
+  font-size: $type-page-title;
+  margin: 15px 0;
+  color: $red;
+}
+
+h2 {
+  font-size: $type-header;
+  margin: 12px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+h3, h4, h5, h6 {
+  margin: 8px 0;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: $type-headline;
+  letter-spacing: 0.1rem;
+}

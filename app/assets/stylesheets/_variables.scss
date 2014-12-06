@@ -1,0 +1,29 @@
+// COLORS
+// http://colorpeek.com/#f44336,fafafa,bdbdbd,757575,424242
+
+$grey-light:      #fafafa;
+$grey:            #bdbdbd;
+$grey-dark:       #757575;
+$black:           #424242;
+
+$red:             #f44336;
+$blue:            #3688f4;
+
+// Typography
+
+$font-base:       Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$type-page-title: 37px;
+$type-header:     28px;
+$type-headline:   21px;
+$type-body:       15px;
+$type-caption:    12px;
+
+$line-height:     1.8;
+
+
+// Media query breakpoints
+
+$screen-phone:    480px;
+$screen-tablet:   768px;
+$screen-desktop:  1225px;

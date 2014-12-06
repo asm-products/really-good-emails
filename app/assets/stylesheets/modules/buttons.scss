@@ -1,0 +1,43 @@
+.btn, .btn-secondary {
+  font: 14px $font-base;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(black, 0.12);
+  border-radius: 25px;
+  margin: 8px 0;
+
+  &:active, &:focus {
+    outline: 0;
+  }
+}
+
+.btn {
+  background-color: $red;
+  color: white;
+  border: 0;
+
+  &:visited, &:visited:hover, &:hover {
+    color: white;
+  }
+}
+
+.btn-secondary {
+  background-color: white;
+  border: 1px solid $grey;
+  color: $grey-dark;
+
+  &:visited, &:visited:hover, &:hover {
+    color: $grey-dark;
+  }
+}
+
+.btn[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  box-shadow: none;
+  opacity: .65;
+}
