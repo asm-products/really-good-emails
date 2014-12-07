@@ -1,0 +1,5 @@
+@mixin avatar-size($size) {
+  @extend %avatar;
+  width: $size;
+  height: $size;
+}

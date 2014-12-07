@@ -1,0 +1,14 @@
+%avatar {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar-small {
+  @include avatar-size(30px);
+}
+.avatar-standard {
+  @include avatar-size(50px);
+}
+.avatar-large {
+  @include avatar-size(150px);
+}
