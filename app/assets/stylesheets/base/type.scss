@@ -1,6 +1,5 @@
 body {
   font-family: $font-base;
-  font-weight: 300;
   font-size: $type-body;
   line-height: 1.8;
   color: $black;
@@ -13,7 +12,12 @@ a, a:visited {
 
   &:hover {
     color: lighten($red, 8%);
+    border-bottom-color: lighten($red, 8%);
   }
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
 }
 
 h1 {
@@ -22,13 +26,9 @@ h1 {
   color: $red;
 }
 
-h2 {
+h2, blockquote {
   font-size: $type-header;
   margin: 12px 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
 }
 
 h3, h4, h5, h6 {
@@ -36,7 +36,22 @@ h3, h4, h5, h6 {
 }
 
 h3 {
-  text-transform: uppercase;
   font-size: $type-headline;
-  letter-spacing: 0.1rem;
+}
+
+h3, h4 {
+  text-transform: uppercase;
+}
+
+h4, small {
+  color: $grey;
+}
+
+h4 {
+  font-weight: 400;
+}
+
+ol, ul {
+  padding-left: 21px; // reset list indent
+}
 }
