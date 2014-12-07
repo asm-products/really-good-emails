@@ -5,7 +5,6 @@
   border-radius: 4px;
   color: $grey;
   width: 16em;
-  max-width: 92%; // don't overflow on mobile
   padding: 6px 12px;
   margin-bottom: 1em;
   display: block;
@@ -26,26 +25,5 @@ textarea.text-input {
 @media (max-width: $screen-phone) {
   .text-input {
     width: 95% !important;
-  }
-}
-
-input[type="file"] {
-  margin: 8px 0;
-}
-
-.radio label {
-  line-height: 1.42;
-  text-transform: none;
-}
-
-.field_with_errors {
-  display: inline !important;
-
-  label {
-    color: $red;
-  }
-
-  input {
-    border-color: $red;
   }
 }
