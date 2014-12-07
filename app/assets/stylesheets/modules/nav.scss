@@ -21,3 +21,9 @@ nav {
     top: 7px;
   }
 }
+
+@media print {
+  nav {
+    display: none !important;
+  }
+}

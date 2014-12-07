@@ -4,3 +4,9 @@
   font-size: $type-headline;
   padding: 1.66em 0;
 }
+
+@media print {
+  .flash {
+    display: none !important;
+  }
+}

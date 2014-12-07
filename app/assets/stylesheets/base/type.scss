@@ -54,4 +54,10 @@ h4 {
 ol, ul {
   padding-left: 21px; // reset list indent
 }
+
+@media print {
+  * {
+    color: black !important;
+    background-color: transparent !important;
+  }
 }
