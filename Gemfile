@@ -5,12 +5,12 @@ gem 'dotenv-rails', groups: [:development, :test]
 
 gem 'autoprefixer-rails'
 gem 'pg'
-gem 'puma'
 gem 'rack-timeout'
 gem 'rails', '4.1.2'
 gem 'sass-rails'
 gem 'turbolinks'
 gem 'uglifier'
+gem 'unicorn'
 
 group :development do
   gem 'better_errors'
