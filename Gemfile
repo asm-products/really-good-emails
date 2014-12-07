@@ -4,6 +4,7 @@ ruby '2.1.3'
 gem 'dotenv-rails', groups: [:development, :test]
 
 gem 'autoprefixer-rails'
+gem 'coffee-rails'
 gem 'pg'
 gem 'rack-timeout'
 gem 'rails', '4.1.2'
