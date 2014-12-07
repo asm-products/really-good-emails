@@ -6,7 +6,11 @@ nav {
 
   * {
     display: inline-block;
-    padding: 0 12px;
+    margin: 0 12px;
+  }
+
+  a {
+    border-bottom: 0;
   }
 
   .logo {
